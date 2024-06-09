@@ -29,5 +29,9 @@ for link in filtered_links:
     scraped_bodies.append(body_text)
     print("body.............", body_text)
 
+# Write the scraped bodies to output.txt
+with open('output.txt', 'w', encoding="utf-8") as file:
+    for body_text in scraped_bodies:
+        file.write(body_text + '\n')
 
 
